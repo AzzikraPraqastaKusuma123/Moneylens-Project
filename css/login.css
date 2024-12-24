@@ -1,0 +1,130 @@
+/* Reset dasar untuk padding dan margin */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Style body untuk membuat background yang menarik */
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_IdMR2yKOMMR8sArSy-5QBXBFL15UeK-uRw&s") no-repeat center center fixed;
+  background-size: cover;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container utama untuk form login */
+.login-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect untuk container */
+.login-container:hover {
+  transform: scale(1.02);
+}
+
+/* Style untuk judul */
+.login-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #34568b;
+  font-weight: bold;
+}
+
+/* Style untuk label */
+.login-container label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Style untuk input */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover dan focus effect untuk input */
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #34568b;
+  box-shadow: 0 0 8px rgba(52, 86, 139, 0.5);
+  outline: none;
+}
+
+/* Style untuk tombol login */
+.login-container button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #34568b, #112d54);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect untuk tombol login */
+.login-container button:hover {
+  background: linear-gradient(90deg, #112d54, #0a1c3d);
+  box-shadow: 0 5px 15px rgba(17, 45, 84, 0.4);
+}
+
+/* Style untuk pesan error */
+.login-container p {
+  color: #d9534f;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Style untuk link ke halaman register */
+.login-container .register-link {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #34568b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-container .register-link:hover {
+  color: #112d54;
+}
+
+/* Media query untuk responsivitas */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  .login-container h1 {
+    font-size: 22px;
+  }
+
+  .login-container button {
+    font-size: 16px;
+  }
+}

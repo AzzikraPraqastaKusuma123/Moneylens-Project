@@ -1,0 +1,142 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+p,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_IdMR2yKOMMR8sArSy-5QBXBFL15UeK-uRw&s") no-repeat center center fixed;
+  background-size: cover;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Outer container styling */
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Form heading */
+.form-container h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #34568b;
+}
+
+/* Form fields container */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form label */
+.form-container label {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Input fields */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Input hover and focus effects */
+.form-container input:hover,
+.form-container select:hover {
+  border-color: #34568b;
+  box-shadow: 0 0 8px rgba(52, 86, 139, 0.2);
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  border-color: #112d54;
+  outline: none;
+  box-shadow: 0 0 12px rgba(17, 45, 84, 0.3);
+}
+
+/* Button styling */
+.form-container button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #34568b, #112d54);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effect */
+.form-container button:hover {
+  background: linear-gradient(90deg, #2e4b79, #0d243f);
+  transform: translateY(-3px);
+}
+
+/* Button active effect */
+.form-container button:active {
+  transform: translateY(2px);
+}
+
+/* Text alignment for links */
+.form-container p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.form-container a {
+  color: #3498db;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.form-container a:hover {
+  color: #2c80c2;
+}
+
+/* Animation for the form */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

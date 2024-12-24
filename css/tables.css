@@ -1,0 +1,152 @@
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(90deg, #34568b, #112d54);
+    padding: 10px 20px;
+    color: #fff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the navbar at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Place at the top */
+    left: 0; /* Align to the left */
+    z-index: 10; /* Ensure it's above other content */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.nav-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-brand:hover {
+    color: #f4f6f9;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect for Navbar Links */
+.nav-links li a:hover {
+    background-color: #f4f6f9; /* Light background on hover */
+    color: #34568b; /* Dark blue text on hover */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* White glow behind text */
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+/* Active Link Effect */
+.nav-links li a.active {
+    background-color: #2e4b79; /* Darker background for active link */
+    color: #fff;
+}
+
+/* Global Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #fff;
+    color: #555;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: linear-gradient(90deg, #34568b, #112d54);
+    color: #fff;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Error Message */
+p {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 1rem;
+    color: red;
+}
+
+/* Utility Classes */
+.container {
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
