@@ -1,7 +1,7 @@
 # Financial Management System
 
 ## Project Overview
-The Financial Management System is a web-based application developed using **PHP** and **MySQL** to streamline financial transactions and budget management. This system is designed to facilitate real-time tracking of financial data, offering user-friendly interfaces for transaction input, budget planning, and data visualization through responsive tables, Dokumentasi [here](https://docs.google.com/document/d/1-lYhfkxV6ArSGHUUQovjc8IhZnqRPCMU6TH9WGS65SM/edit?usp=sharing)
+The Financial Management System is a web-based application developed using **PHP** and **MySQL** to streamline financial transactions and budget management. This system is designed to facilitate real-time tracking of financial data, offering user-friendly interfaces for transaction input, budget planning, and data visualization through responsive tables, documentation [here](https://docs.google.com/document/d/1-lYhfkxV6ArSGHUUQovjc8IhZnqRPCMU6TH9WGS65SM/edit?usp=sharing)
 
 <div align="center">
     <img src="pixelard.gif" alt="Deskripsi GIF" width="500">
